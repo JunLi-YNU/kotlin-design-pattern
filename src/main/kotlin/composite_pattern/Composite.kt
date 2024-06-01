@@ -3,7 +3,7 @@ package composite_pattern
 /**
  * 具体枝干节点
  */
-class Composite(protected override var name: String) : Component(name) {
+class Composite(override var name: String) : Component(name) {
     private var components = mutableListOf<Component>()
 
     override fun doSomething() {
